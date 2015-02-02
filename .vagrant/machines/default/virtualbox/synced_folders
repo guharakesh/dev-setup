@@ -1,0 +1,1 @@
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/Rakesh/dev/vagrant","disabled":false},"/tmp/vagrant-puppet/manifests-846018e2aa141a5eb79a64b4015fc5f3":{"owner":"root","guestpath":"/tmp/vagrant-puppet/manifests-846018e2aa141a5eb79a64b4015fc5f3","hostpath":"C:/Users/Rakesh/dev/vagrant/puppet/manifests","disabled":false}}}
