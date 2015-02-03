@@ -6,6 +6,10 @@
 
 2. [Vagrant](http://downloads.vagrantup.com/)
 
+### On Windows hosts:
+
+3. [Vagrant Multi Putty](https://github.com/nickryand/vagrant-multi-putty)
+
 ## Installation
 
 1. `git clone git@github.com:guharakesh/dev-setup.git`
@@ -15,5 +19,11 @@
 ## Usage
 
 1. `vagrant up`
+
+### On Windows hosts:
+
+2. `vagrant putty`
+
+### Otherwise:
 
 2. `vagrant ssh`
