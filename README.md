@@ -16,14 +16,9 @@
 
 2. `cd dev-setup`
 
+3. `vagrant up`
+
 ## Usage
 
-1. `vagrant up`
+`vagrant ssh`
 
-#### On Windows hosts:
-
-2. `vagrant putty`
-
-#### Otherwise:
-
-2. `vagrant ssh`
