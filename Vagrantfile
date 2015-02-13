@@ -2,6 +2,8 @@ Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.network :forwarded_port, host: 3000, guest: 80
 
+	config.ssh.forward_agent = true
+
   config.vm.provider :virtualbox do |vb|
     # This allows symlinks to be created within the /vagrant dir
     vb.customize [
