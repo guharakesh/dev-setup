@@ -2,5 +2,4 @@
 
 set -e
 
-if [ -d .vim ]; then
 
