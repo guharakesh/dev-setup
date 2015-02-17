@@ -1,6 +1,7 @@
 Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.network :forwarded_port, host: 3000, guest: 80
+	config.vm.network :forwarded_port, host: 3333, guest: 8100 
 
 	config.ssh.private_key_path = ["~/.vagrant.d/insecure_private_key", "~/.ssh/id_rsa"]
 	config.ssh.forward_agent = true
