@@ -1,9 +1,9 @@
 TODO:
- - instructions for ConEmu, Git Bash
- - add ssh-agent script for Git Bash
- - instructions to generate and store ssh key
- - separate specific settings (ports, etc) into config json
- - separate 'inlaw' specific tools (at what point is that?) into their own script
+ - [ ] instructions for ConEmu, Git Bash
+ - [ ] add ssh-agent script for Git Bash
+ - [ ] instructions to generate and store ssh key
+ - [ ] separate specific settings (ports, etc) into config json
+ - [ ] separate 'inlaw' specific tools (at what point is that?) into their own script
 
 # Vagrant and Puppet configuration for NodeJS development
 
