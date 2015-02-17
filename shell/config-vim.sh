@@ -2,4 +2,11 @@
 
 set -e
 
+if [ -d .vim ]; then
+	rm -rf .vim;
+fi
 
+mkdir .vim
+mkdir .vim/plugin
+
+echo -e "augroup vagrant\n\tau!\n\tau BufRead,BufNewFile Vagrantfile set filetype=ruby\naugroup END" >> .vim/plugin/vagrant.vim
