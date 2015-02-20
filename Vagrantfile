@@ -17,6 +17,7 @@ Vagrant.configure(2) do |config|
   # install puppet and librarian-puppet
   config.vm.provision :shell, :path => "shell/install-puppet.sh"
   config.vm.provision :shell, :path => "shell/install-librarian-puppet.sh"
+  config.vm.provision :shell, :path => "shell/config-vim.sh"
 
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "puppet/manifests"
