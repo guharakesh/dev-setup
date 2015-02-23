@@ -22,6 +22,9 @@ sudo chown -R vagrant android-sdk-linux/
 echo "ANDROID_HOME=~/android-sdk-linux" >> /home/vagrant/.bashrc
 echo "PATH=\$PATH:~/android-sdk-linux/tools:~/android-sdk-linux/platform-tools" >> /home/vagrant/.bashrc
 
+echo "installing gulp..."
+npm install -g gulp 2>/dev/null
+
 echo "installing cordova..."
 npm install -g cordova 2>/dev/null
 
