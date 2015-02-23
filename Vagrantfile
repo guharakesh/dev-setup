@@ -12,18 +12,23 @@ Vagrant.configure(2) do |config|
       "setextradata", :id,
       "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"
     ]
+		vb.customize ["modifyvm", :id, "--usb", "on"]
+		vb.customize ["usbfilter", "add", "0", "--target", :id, "--name", "android", "--vendorid", "0x18d1"]
   end
 
   # install puppet and librarian-puppet
   config.vm.provision :shell, :path => "shell/install-puppet.sh"
   config.vm.provision :shell, :path => "shell/install-librarian-puppet.sh"
-  config.vm.provision :shell, :path => "shell/config-vim.sh"
 
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "puppet/manifests"
     puppet.manifest_file = "default.pp"
   end
 
+  config.vm.provision :shell, :path => "shell/config-vim.sh"
+  config.vm.provision :shell, :path => "shell/install-ionic.sh"
+  
 	config.vm.provision "file", source: "~/.gitconfig", destination: ".gitconfig"
+	# config.vm.provision "file", source: "shell/vimrc", destination: ".vimrc"
 	config.vm.provision "file", source: "~/.ssh/id_rsa.pub", destination: ".ssh/id_rsa.pub"
 end
