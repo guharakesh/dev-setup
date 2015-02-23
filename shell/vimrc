@@ -1,0 +1,28 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree.git'
+
+Plugin 'pangloss/vim-javascript'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Raimond/delimiteMate'
+
+call vundle#end()
+
+filetype plugin indent on
+syntax on
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set noexpandtab
+
+set	noeb vb t_vb=
+au GUIEnter * set vb t_vb=
+
+imap <C-c> <CR><Esc>0	
+
